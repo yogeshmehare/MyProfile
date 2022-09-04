@@ -1,0 +1,14 @@
+{
+  "name": "apis",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gitapi.js",
+  "scripts": {
+    "start": "node ./gitapi.js",
+    "dev": "nodemon ./gitapi.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

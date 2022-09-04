@@ -12,6 +12,7 @@ import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import { InsertEmoticon } from '@mui/icons-material';
+import ProjectSelectorInHeader from './ProjectSelectorInHeader';
 
 const pages = ['Projects', "Linkedin", 'Blogs'];
 const settings = ['Profile', 'Dashboard'];
@@ -112,6 +113,9 @@ const Header = () => {
           >
             YOGESH MEHARE
           </Typography>
+
+          <ProjectSelectorInHeader/>
+
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
             {pages.map((page) => (
               <Button
@@ -128,7 +132,7 @@ const Header = () => {
           <Box sx={{ flexGrow: 0 }}>
             <Tooltip title="Open Account Settings">
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                <Avatar alt="User" src="/static/images/avatar/2.jpg" />
+                <Avatar alt="User" src="/public/profilepic1.jpg" />
               </IconButton>
             </Tooltip>
             <Menu
